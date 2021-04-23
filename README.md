@@ -1,6 +1,9 @@
 # Spring boot java
 
 ![index](https://user-images.githubusercontent.com/52612929/115919845-c20dfb80-a44f-11eb-959f-9270ba1cdff4.png)
+<br>
+## Descripcion
+Api Rest hecho en Java Spring con conexión a base de datos MySQL, motor de plantillas para las vistas Thymeleaf, renderización en el cliente VueJs, front-end hecho con Bootstrap, HTML, CSS y Javascript
 
 ## Instalacion
 
