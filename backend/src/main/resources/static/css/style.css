@@ -1,0 +1,21 @@
+.content {
+	margin-top: 5%;
+}
+
+#alert-logout {
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+.hidden {
+	display: none;
+}
+
+.unset {
+	all: unset;
+}
+
+.strong {
+	font-weight: bold;
+}

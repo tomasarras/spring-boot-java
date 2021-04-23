@@ -1,0 +1,25 @@
+<div th:fragment="modalCreateProduct" class="modal fade" id="modalCreateProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar producto</h5>
+        <button type="button" class="btn-close" id="close-create-product" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+			<label for="create-category-name" class="form-label">Nombre del producto</label>
+			<input type="text" class="form-control" id="create-category-name" placeholder="Nombre">
+		</div>
+		
+		<div class="mb-3">
+			<label for="create-category-price" class="form-label">Precio</label>
+			<input type="number" class="form-control" id="create-category-price" placeholder="Precio">
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="btn-create-product" disabled>Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>

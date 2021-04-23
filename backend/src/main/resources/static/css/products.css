@@ -1,0 +1,23 @@
+.icon-delete {
+	font-size: 22px;
+	color: red;
+	margin-left: 40%;
+}
+
+.icon-edit {
+	font-size: 20px;
+	color: #0d6efd;
+}
+
+.icon-save {
+	margin-left: 5px;
+}
+
+.icon-cancel {
+	margin-left: 5px;
+}
+
+.unset-buttons button {
+	all: unset;
+	cursor: pointer;
+}

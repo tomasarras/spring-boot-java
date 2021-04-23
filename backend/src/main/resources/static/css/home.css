@@ -1,0 +1,38 @@
+.title {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.title-create-category {
+	margin-bottom: 2%;
+}
+
+#accordion-create {
+	margin-bottom: 2%;
+}
+
+.icon-create-category {
+	color: #198754;
+	margin-left: 5px;
+}
+
+.buttons-category {
+	width: 100%;	
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 4%;
+}
+
+.buttons-categoryy {
+	display: flex;
+	justify-content: space-around;
+}
+
+.accordion-category {
+	display: flex;
+}
+
+.ellipsis {
+	margin-right: 15px;
+	font-size: 0.9em;
+}

@@ -1,0 +1,22 @@
+<div th:fragment="modalEditCategory" class="modal fade" id="modalEditCategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar categoria</h5>
+        <button type="button" class="btn-close" id="close-edit-category" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <span>Ingresa el nuevo nombre de la categoria</span>
+        
+        <div class="mb-3">
+			<label for="edit-name-category" class="form-label">Nombre</label>
+			<input type="text" class="form-control" id="edit-name-category" placeholder="Nombre">
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="js-btn-edit-category" disabled>Editar</button>
+      </div>
+    </div>
+  </div>
+</div>

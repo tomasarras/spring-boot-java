@@ -1,0 +1,12 @@
+.card {
+	width: 50%;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+}
+
+.input-username {
+	margin-top: 3%;
+}

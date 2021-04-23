@@ -1,0 +1,29 @@
+<div class="content" th:fragment="userForm(title, subtitle, invalidUser,action,btnSubmit)">
+	<form id="form" th:action="${action}">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title"><span th:text="${title}"></span></h5>
+				<h6 class="card-subtitle mb-2 text-muted"><span th:text="${subtitle}"></span></h6>
+
+
+				<div class="mb-3">
+					<label for="username" class="form-label input-username">Nombre de usuario</label>
+					<input type="text" class="form-control" id="username"
+						placeholder="Nombre de usuario" required>
+					<div class="invalid-feedback"><span th:text="${invalidUser}"></span></div>
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label">Password</label> <input
+						type="password" class="form-control" id="password"
+						placeholder="Password" required>
+					<div class="invalid-feedback">La password es invalida</div>
+				</div>
+
+
+				<button class="btn btn-primary" id="submit" disabled th:text="${btnSubmit}"></button>
+			</div>
+		</div>
+	</form>
+	<link rel="stylesheet" th:href="@{/css/userForm.css}">
+	<script th:src="@{/js/userForm.js}" type="module"></script>
+</div>

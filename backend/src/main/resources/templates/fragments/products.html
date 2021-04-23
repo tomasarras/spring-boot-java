@@ -1,0 +1,32 @@
+<table class="table" th:fragment="products">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="product in category.products">
+    	<input type="hidden" class="js-idCategory" v-bind:value="product.category.id">
+      <th scope="row" class="js-product-id">{{product.id}}</th>
+      
+      <td class="js-editMode">{{product.name}}</td>
+      <td class="js-editMode hidden"><input class="js-edit-name" type="text" v-bind:value="product.name"></td>
+      
+      <td class="js-editMode">${{product.price}}</td>
+      <td class="js-editMode hidden"><input class="js-edit-price" type="text" v-bind:value="product.price"></td>
+      
+      <td v-if="isLogged()" class="js-editMode unset-buttons">
+      	<button v-on:click="switchEditMode($event)"><i class="fas fa-pen icon-edit"></i></button>
+      	<button data-bs-toggle="modal" data-bs-target="#modalDeleteProduct" v-on:click="showModal(product)"><i class="far fa-trash-alt icon-delete"></i></button>
+      </td>
+      
+      <td class="js-editMode hidden">
+      	<button v-on:click="edit($event)" class="btn btn-outline-primary">Guardar<i class="fas fa-save icon-save"></i></button>
+      	<button v-on:click="switchEditMode($event)" class="btn btn-outline-secondary">Cancelar<i class="fas fa-times icon-cancel"></i></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
