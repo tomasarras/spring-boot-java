@@ -15,7 +15,8 @@ Api Rest hecho en Java Spring con conexión a base de datos MySQL, motor de plan
 <br>
 <br>
 
-
+Documentacion en Swagger: http://localhost:8080/swagger-ui/index.html
+<br>
 La contraseña de todos los usuarios es **123**
 
 <br>
