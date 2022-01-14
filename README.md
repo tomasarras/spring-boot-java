@@ -8,10 +8,10 @@ Api Rest hecho en Java Spring con conexión a base de datos MySQL, motor de plan
 ## Instalacion
 
 ### Instalacion del proyecto
-1. Crear una base de datos *mysql* de nombre **backend**
-2. Importar la carpeta **backend** y configurar una base de datos en **application.properties**
-3. Correr la aplicacion y en el browser ir a **http://localhost:8080/**
-4. Opcionalmente importar a la base de datos la carpeta **mock data** con datos
+1. Correr el comando ```docker-compose up```
+2. En caso de que no inicie correctamente volver a intentar el paso 1
+3. Opcionalmente importar a la base de datos la carpeta **mock data** con datos o dejarla vacia
+4. ir a http://localhost:8080
 <br>
 <br>
 
