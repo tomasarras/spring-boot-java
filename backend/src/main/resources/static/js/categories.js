@@ -2,7 +2,7 @@ import TokenHelper from './TokenHelper.js';
 import Products from './Products.js';
 
 document.addEventListener("DOMContentLoaded",()=> {
-	let url = window.location.origin;
+	let url = window.location.origin + (window.APP_CONTEXT_PATH || "");
 	let categoriesJson;
 	let p = new Products();
 	p.onFinishEditProduct = onFinishEditProduct;

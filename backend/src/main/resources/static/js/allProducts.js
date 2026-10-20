@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 	p.onFinishEditProduct = onFinishEditProduct;
 	p.onFinishDeleteProduct = onFinishDeleteProduct;
 	
-	const url = window.location.origin;
+	const url = window.location.origin + (window.APP_CONTEXT_PATH || "");
 	let products;
 	
 	getProducts();

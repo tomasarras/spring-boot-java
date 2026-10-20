@@ -3,7 +3,7 @@ import TokenHelper from './TokenHelper.js';
 export default class Products {
 	onFinishEditProduct;
 	onFinishDeleteProduct;
-	url = window.location.origin;
+	url = window.location.origin + (window.APP_CONTEXT_PATH || "");
 	
 	constructor() {
 		let btnDeleteProduct = document.querySelector("#btn-delete-product");
@@ -65,7 +65,7 @@ export default class Products {
 	
 	async deleteProduct() {
 		let id = document.querySelector("#btn-delete-product").getAttribute("name");
-		let response = await fetch("/api/categories/products/" + id, {
+		let response = await fetch((window.APP_CONTEXT_PATH || "") + "/api/categories/products/" + id, {
 			"method": "DELETE",
 			"headers": {
                 "Content-Type": "application/json",

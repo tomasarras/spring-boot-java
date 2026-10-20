@@ -1,5 +1,5 @@
 import TokenHelper from './TokenHelper.js';
-let url = window.location.origin;
+let url = window.location.origin + (window.APP_CONTEXT_PATH || "");
 let usersGlobal;
 
 getUsers((users)=> {

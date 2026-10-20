@@ -1,7 +1,7 @@
 import TokenHelper from './TokenHelper.js';
 
 document.addEventListener("DOMContentLoaded",()=>{
-    let url = window.location.origin + "/";
+    let url = window.location.origin + (window.APP_CONTEXT_PATH || "") + "/";
     let inputUsername = document.querySelector("#username");
     let inputPassword = document.querySelector("#password");
     let submitButton = document.querySelector("#submit");
