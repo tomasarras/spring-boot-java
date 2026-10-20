@@ -4,9 +4,11 @@ services:
         build: 
             context: ./backend
             dockerfile: Dockerfile
-        ports: 
+        ports:
             - 8080:8080
         restart: always
+        environment:
+            SERVER_CONTEXT_PATH: /spring-boot-demo
         depends_on:
             - db
     
