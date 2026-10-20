@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: spring-boot-java
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: "jdbc:h2:mem:backend;DB_CLOSE_DELAY=-1"
+      - key: SPRING_DATASOURCE_USERNAME
+        value: sa
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: ""
+      - key: SPRING_DATASOURCE_DRIVER
+        value: org.h2.Driver
